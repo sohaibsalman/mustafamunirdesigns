@@ -1,35 +1,8 @@
-.hero_subtitle {
-  font-family: 'Raleway', sans-serif;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 500;
-}
-
-.hero_subtitle::after {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 1px;
-  top: 6%;
-  background-color: #fff;
-  margin-left: 25px;
-}
-
-.hero_main {
-  font-size: 70px;
-  font-weight: bolder;
-}
-
-.coming_soon {
-  background: black;
-}
-
 .coming_soon_home {
   position: relative;
   background: url("../assets/images/bg_home.jpg");
   background-position: center;
   background-size: cover;
-  color: white;
 }
 
 .coming_soon_home--overlay {
@@ -43,10 +16,10 @@
 }
 
 .coming_soon_home .logo {
-  padding: 20px 40px;
   position: absolute;
   top: 0;
   z-index: 3;
+  padding: 20px;
 }
 
 .coming_soon_home .logo img {
@@ -54,22 +27,36 @@
 }
 
 .coming_soon_home--content {
-  padding: 0 50px;
+  padding: 0 30px;
   position: absolute;
   z-index: 2;
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  color: white;
   width: 100%;
 }
 
-.coming_soon_home--footer {
-  position: absolute;
-  z-index: 2;
-  padding: 0 50px 20px;
-  bottom: 0;
-  font-size: 12px;
-  text-transform: uppercase;
+.coming_soon_home--content h1 {
+  font-size: 80px;
+  font-weight: 100;
 }
-/*# sourceMappingURL=main.css.map */
+
+.coming_soon_home--logo {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.coming_soon_home--logo img {
+  position: relative;
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  bottom: 0;
+}
+/*# sourceMappingURL=coming-soon.css.map */

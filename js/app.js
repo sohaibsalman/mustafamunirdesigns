@@ -1,5 +1,5 @@
-// Initialize Fullpage.js
 $(document).ready(function () {
+  // Initialize Fullpage.js
   $('#fullpage').fullpage({
     //options here
     autoScrolling: true,
@@ -8,4 +8,7 @@ $(document).ready(function () {
 
   //methods
   $.fn.fullpage.setAllowScrolling(true);
+
+  //Set Footer Date
+  $('#coming_soon_home--date').html = new Date().getFullYear();
 });

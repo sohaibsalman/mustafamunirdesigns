@@ -1,0 +1,20 @@
+.hero_subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    top: 6%;
+    background-color: #fff;
+    margin-left: 25px;
+  }
+}
+
+.hero_main {
+  font-size: 70px;
+  font-weight: bolder;
+}
