@@ -1,0 +1,94 @@
+.navbar-container {
+    position: relative;
+    background-color: black;
+    padding: 0 40px;
+}
+
+.navbar-brand * {
+    display: inline-block;
+    width: 60px;
+}
+
+#navbar-links-container {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+
+    transition: all 0.5s;
+}
+
+.navbar-links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 150px;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.nav-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    z-index: 101;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 35px;
+    height: 1px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.bar:first-child {
+    margin-bottom: 14px;
+}
+
+.navbar-slide {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.3s;
+}
+
+#navbar-links-container {
+    transition: all 0.8s !important;
+}
+
+#navbar-slide-1 {
+    transition: all 0.6s;
+    background-color: red;
+}
+
+#navbar-slide-2 {
+    background-color: green;
+}
+
+#navbar-slide-3 {
+    background-color: blue;
+}
+
+.bar-rotate-primary {
+    margin-bottom: 0 !important;
+    transform: rotate(45deg);
+}
+
+.bar-rotate-secondary {
+    transform: rotate(135deg);
+}
