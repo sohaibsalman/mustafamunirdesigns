@@ -11,7 +11,7 @@ const BgVideo = ({ source }) => {
                 </video>
                 <div className="home-bg-video-overlay" />
                 <div className="home-bg-video-heading">
-                    <h1>Mustafa Munir Desings</h1>
+                    <h1>Mustafa Munir Designs</h1>
                 </div>
             </div>
         </React.Fragment>
