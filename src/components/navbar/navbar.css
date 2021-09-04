@@ -1,6 +1,6 @@
 .navbar-container {
     position: relative;
-    background-color: black;
+    background-color: #212529;
     padding: 0 40px;
 }
 
@@ -15,19 +15,23 @@
     left: 100%;
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: #212529;
     z-index: 100;
-
     transition: all 0.5s;
 }
 
 .navbar-links {
+    list-style: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 150px;
     font-size: 80px;
     text-transform: uppercase;
+}
+
+.nav-link {
+    margin: 10px 0;
 }
 
 .nav-link a {
@@ -37,11 +41,13 @@
 
 .navbar-toggler {
     position: absolute;
-    top: 50%;
+    top: 0;
     right: 40px;
-    transform: translateY(-50%);
     z-index: 101;
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .bar {
@@ -73,15 +79,11 @@
 
 #navbar-slide-1 {
     transition: all 0.6s;
-    background-color: red;
+    background-color: #dba46e;
 }
 
 #navbar-slide-2 {
-    background-color: green;
-}
-
-#navbar-slide-3 {
-    background-color: blue;
+    background-color: #565656;
 }
 
 .bar-rotate-primary {
@@ -91,4 +93,38 @@
 
 .bar-rotate-secondary {
     transform: rotate(135deg);
+}
+
+@media (max-width: 575px) {
+    .navbar-links {
+        margin-left: 30px;
+        font-size: 55px;
+    }
+    .navbar-toggler {
+        right: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .navbar-links {
+        margin-left: 40px;
+        font-size: 60px;
+    }
+    .navbar-toggler {
+        right: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .navbar-links {
+        margin-left: 60px;
+        font-size: 65px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .navbar-links {
+        margin-left: 80px;
+        font-size: 70px;
+    }
 }
