@@ -9,9 +9,6 @@ const Navbar = () => {
     const handleNavbarToggle = () => {
         const bars = document.getElementsByClassName("bar");
         if (!isOpen) {
-            bars[0].classList.add("bar-rotate-primary");
-            bars[1].classList.add("bar-rotate-secondary");
-
             let timer = 0;
             sliders.forEach((slide) => {
                 setTimeout(() => {
@@ -22,11 +19,13 @@ const Navbar = () => {
 
             setTimeout(() => {
                 document.getElementById("navbar-links-container").style.left = 0;
+
+                bars[0].classList.add("bar-rotate-primary");
+                bars[1].classList.add("bar-rotate-secondary");
             }, timer);
         } else {
-            bars[0].classList.remove("bar-rotate-primary");
-            bars[1].classList.remove("bar-rotate-secondary");
             document.getElementById("navbar-links-container").style.left = "100%";
+
             let timer = 350;
             for (let i = sliders.length; i > 0; i--) {
                 setTimeout(() => {
@@ -34,6 +33,11 @@ const Navbar = () => {
                 }, timer);
                 timer += 350;
             }
+
+            setTimeout(() => {
+                bars[0].classList.remove("bar-rotate-primary");
+                bars[1].classList.remove("bar-rotate-secondary");
+            }, timer);
         }
         setIsOpen(!isOpen);
     };

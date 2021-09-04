@@ -7,7 +7,7 @@
 
 .navbar-container {
     position: relative;
-    background-color: #565656;
+    background-color: transparent;
     padding: 0 40px;
 }
 
@@ -53,7 +53,7 @@
 .bar {
     display: block;
     width: 35px;
-    height: 1px;
+    height: 2px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
@@ -61,6 +61,10 @@
 
 .bar:first-child {
     margin-bottom: 14px;
+}
+
+.navbar-toggler:hover .bar {
+    background-color: #dba46e;
 }
 
 .navbar-slide {
@@ -88,7 +92,7 @@
 }
 
 .bar-rotate-primary {
-    margin-bottom: 0 !important;
+    margin-bottom: -2px !important;
     transform: rotate(45deg);
 }
 
@@ -99,10 +103,17 @@
 @media (max-width: 575px) {
     .navbar-links {
         margin-left: 30px;
-        font-size: 55px;
+        font-size: 40px;
     }
     .navbar-toggler {
         right: 30px;
+    }
+    .navbar-container {
+        padding: 0 25px;
+    }
+    .navbar-brand * {
+        display: inline-block;
+        width: 35px;
     }
 }
 
