@@ -42,7 +42,9 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <div className="navbar-brand">
-                    <img src="./assets/logo.png" alt="Mustafa-Munir" />
+                    <a href="#">
+                        <img src="./assets/logo.svg" alt="Mustafa-Munir" />
+                    </a>
                 </div>
                 <div className="navbar-toggler" id="navbar-toggle" onClick={handleNavbarToggle}>
                     <div className="hamburger">
@@ -77,12 +79,12 @@ const NAVBAR_LINKS = [
         url: "/",
     },
     {
-        title: "Artwork",
-        url: "/artwork",
+        title: "Artworks",
+        url: "/artworks",
     },
     {
-        title: "Design",
-        url: "/design",
+        title: "Projects",
+        url: "/projects",
     },
     {
         title: "Contact",
