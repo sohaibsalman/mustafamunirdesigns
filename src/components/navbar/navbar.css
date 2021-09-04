@@ -1,23 +1,12 @@
 .navbar-container {
     position: relative;
-    background-color: #212529;
+    background-color: #565656;
     padding: 0 40px;
 }
 
 .navbar-brand * {
     display: inline-block;
     width: 60px;
-}
-
-#navbar-links-container {
-    position: fixed;
-    top: 0;
-    left: 100%;
-    height: 100vh;
-    width: 100%;
-    background-color: #212529;
-    z-index: 100;
-    transition: all 0.5s;
 }
 
 .navbar-links {
@@ -75,6 +64,7 @@
 
 #navbar-links-container {
     transition: all 0.8s !important;
+    background-color: #565656;
 }
 
 #navbar-slide-1 {
@@ -83,7 +73,7 @@
 }
 
 #navbar-slide-2 {
-    background-color: #565656;
+    background-color: #212529;
 }
 
 .bar-rotate-primary {
