@@ -4,8 +4,17 @@ import BgVideo from "../../bg-video/BgVideo";
 const Home = () => {
     return (
         <React.Fragment>
-            <BgVideo source="./assets/bg.mp4" />
+            <BgVideo source="./assets/without text.mp4" />
+            <AboutSection />
         </React.Fragment>
+    );
+};
+
+const AboutSection = () => {
+    return (
+        <div>
+            <h1>About</h1>
+        </div>
     );
 };
 
