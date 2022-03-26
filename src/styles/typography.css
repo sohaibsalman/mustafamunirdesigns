@@ -1,0 +1,8 @@
+.heading-secondary {
+    text-transform: uppercase;
+    color: var(--secondary);
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}

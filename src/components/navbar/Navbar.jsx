@@ -9,7 +9,7 @@ import {
 const Navbar = () => {
     return (
         <React.Fragment>
-            <nav className="navbar navbar-expand-lg navbar-dark navbar-bg-primary">
+            <nav className="navbar navbar-expand-lg fixed-top navbar-dark navbar-bg-primary">
                 <Link className="navbar-brand" to={'/'}>
                     <img
                         src={navbarImageProperties.src}
