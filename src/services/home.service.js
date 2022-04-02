@@ -32,6 +32,10 @@ const otherPages = [
         text: 'Khaka Ghar',
         route: 'khaka-ghar',
     },
+    {
+        text: 'Designs',
+        route: 'designs',
+    },
 ];
 
 export { about, otherPages };

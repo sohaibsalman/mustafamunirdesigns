@@ -92,6 +92,8 @@ code {
 
 /* Home Other Pages Section Style Ends */
 .home-other-pages {
-    height: 100vh;
+    margin-top: 70px;
+    padding-left: 10%;
+    padding-right: 3%;
 }
 /* Home Other Pages Section Style Ends */

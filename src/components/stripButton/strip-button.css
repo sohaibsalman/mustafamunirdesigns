@@ -1,8 +1,9 @@
 .strip-button {
     background-color: var(--primary);
-    padding: 30px 50px;
+    padding: 20px 50px;
     margin: 30px 0;
     cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .strip-button-text {

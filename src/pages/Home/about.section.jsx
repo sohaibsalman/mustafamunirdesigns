@@ -1,5 +1,7 @@
 import React from 'react';
 
+import OtherPages from './otherpages.section';
+
 import { about } from '../../services/home.service';
 
 const AboutSection = () => {
@@ -14,6 +16,9 @@ const AboutSection = () => {
                                     {about.heading}
                                 </h2>
                                 <p>{about.details}</p>
+                            </div>
+                            <div className="other-pages">
+                                <OtherPages />
                             </div>
                         </div>
                         <div className="col-md-5">

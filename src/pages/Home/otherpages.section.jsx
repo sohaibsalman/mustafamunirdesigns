@@ -6,7 +6,7 @@ import { otherPages } from '../../services/home.service';
 const OtherPages = () => {
     return (
         <React.Fragment>
-            <section className="home-other-pages container">
+            <section className="home-other-pages">
                 {otherPages.map((page, index) => (
                     <StripButton
                         key={index}

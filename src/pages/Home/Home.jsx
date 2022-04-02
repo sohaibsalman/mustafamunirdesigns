@@ -8,7 +8,6 @@ const Home = () => {
         <React.Fragment>
             <VideSection source={'./assets/home-video.mp4'} />
             <AboutSection />
-            <OtherPages />
         </React.Fragment>
     );
 };
